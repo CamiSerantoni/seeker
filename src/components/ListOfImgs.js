@@ -1,16 +1,13 @@
 import React from 'react';
 import Image from './Image';
 
-function ListOfImgs({images}) {
-
+function ListOfImgs({images}){
     return (
         <div className="col-12 p-5 row">
             {images.map(image => (
-
-
                 <Image
                 key={image.id}
-                image = { image }
+                image = {image}
                 />
             ))} 
             

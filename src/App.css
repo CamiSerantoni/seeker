@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+
+body{
+  background: #5433FF;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+ 
+.brandImg{
+  width: 23%;
+  position: absolute;
+  top: -5px;
+  left: 218px;
+  margin-left: 475px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.card-img, .card-img-top {
+  border-top-left-radius: -1px;
+  border-top-right-radius: 1px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.jumbotron {
+  border: 2px solid #333;
+  border-radius: 555px 25px 15px 25px/25px 5px 35px 555px;
+  margin-top: 5%;
+}
+
+.brand-container {
+    display: flex;
+    flex-flow: column-reverse;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+  .brandImg{
+    width: 45%;
+    top: 34px;
+    margin-left: -16px;
+  }
+  
+  .brand-container {
+      display: flex;
+      flex-flow: column-reverse;
+  }
+
+  .card-img, .card-img-top {
+    border-top-left-radius: 1px;
+    border-top-right-radius: 1px;
+}
+  }
+  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    
+    .brandImg {
+      width: 40%;
+      top: 15px;
+      margin-left: 116px;
+    } 
+    
+    .brand-container {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+  
+    .card-img, .card-img-top {
+      border-top-left-radius: 1px;
+      border-top-right-radius: 1px;
+  }
+    }
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   .brandImg {
+    width: 23%;
+    position: absolute;
+    top: 10px;
+    left: 218px;
+    margin-left: 309px;
   }
 }
+  /* iPads (portrait) ----------- */
+  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  
+    .brandImg {
+      width: 30%;
+      position: absolute;
+      top: 10px;
+      left: 95px;
+      margin-left: 309px;
+    }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+} 

@@ -1,6 +1,8 @@
 import React, {useState, useEffect}from 'react';
 import Seeker from './components/Seeker';
 import ListOfImgs from './components/ListOfImgs';
+import seekerBrand from './images/seeker.png';
+import './App.css';
 
 function App() {
 
@@ -15,7 +17,7 @@ function App() {
          
           if(search === '') return;
 
-          const imgPage= 25;
+          const imgPage= 20;
           const key ='17376848-c71bcd5964de485b8d7427883'
           const url = `https://pixabay.com/api/?key=${key}&q=${search}&per_page=${imgPage}&page=${actualPage}`;
 
@@ -50,8 +52,10 @@ function App() {
 
   return (
     <div className="app container">
-      <h1 className=" p-5 text-center display-4 m-10"> Seeker.img</h1>
-
+      <div className="brand-container">
+        <h1 className=" p-5 text-center display-4 m-10"> Seeker.img</h1>
+        <img src={seekerBrand} alt="imagen de lupa" className="brandImg"/>
+      </div>
        <div className="jumbotron">
          
         <Seeker
@@ -65,11 +69,11 @@ function App() {
          />
 
           { (actualPage === 1 ) ? null : (
-         <button onClick={prevPage} type="button" className="btn btn-primary mr-5 mb-5">&laquo; Anterior </button>
+         <button onClick={prevPage} type="button" className="btn btn-warning mr-5 mb-5">&laquo; Anterior </button>
         )}
 
          { (actualPage === totalPages)  ? null :  (  
-         <button onClick={nextPage} type="button" className="btn btn-primary mr-1 mb-5">Siguiente &raquo;</button>
+         <button onClick={nextPage} type="button" className="btn btn-warning mr-1 mb-5">Siguiente &raquo;</button>
           )} 
          </div>
     </div>
