@@ -13,8 +13,12 @@ body{
   margin-left: 475px;
 }
 
+.card {
+  border-radius: -1px 5px 5px 5px/25px 25px 25px 5px;
+}
+
 .card-img, .card-img-top {
-  border-top-left-radius: -1px;
+  border-top-left-radius: 1px;
   border-top-right-radius: 1px;
 }
 
@@ -61,8 +65,8 @@ body{
     }
   
     .card-img, .card-img-top {
-      border-top-left-radius: 1px;
-      border-top-right-radius: 1px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
   }
     }
 

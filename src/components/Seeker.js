@@ -38,7 +38,7 @@ function Seeker({saveThatSearch}) {
             <div className="form-group col-md-4">
               <input
                 type="submit"
-                className="btn btn-lg btn-outline-primary btn-block"
+                className="btn btn-lg btn-success btn-block"
                 value="Buscar"
               />
             </div>       
