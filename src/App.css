@@ -10,16 +10,7 @@ body{
   position: absolute;
   top: -5px;
   left: 218px;
-  margin-left: 475px;
-}
-
-.card {
-  border-radius: -1px 5px 5px 5px/25px 25px 25px 5px;
-}
-
-.card-img, .card-img-top {
-  border-top-left-radius: 1px;
-  border-top-right-radius: 1px;
+  margin-left: 450px;
 }
 
 .jumbotron {
@@ -35,22 +26,19 @@ body{
 
 @media only screen and (min-device-width: 320px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
 
-  .brandImg{
-    width: 45%;
-    top: 34px;
-    margin-left: -16px;
-  }
-  
-  .brand-container {
-      display: flex;
-      flex-flow: column-reverse;
+    .brandImg{
+      width: 45%;
+      top: 34px;
+      margin-left: -16px;
+    }
+    
+    .brand-container {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
   }
 
-  .card-img, .card-img-top {
-    border-top-left-radius: 1px;
-    border-top-right-radius: 1px;
-}
-  }
   @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
     
     .brandImg {
@@ -64,11 +52,7 @@ body{
         flex-flow: column-reverse;
     }
   
-    .card-img, .card-img-top {
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-  }
-    }
+}
 
 /* iPads (portrait and landscape) ----------- */
 @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
