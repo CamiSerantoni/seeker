@@ -4,19 +4,70 @@ body{
   background: -webkit-linear-gradient(to right, #A5FECB, #20BDFF, #5433FF);  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #A5FECB, #20BDFF, #5433FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
- 
-img {
-  border-radius: 4px;
-  vertical-align: middle;
-  border-style: none;
+
+img > .brandImg {
+  max-width: 20%;
 }
 
-.brandImg{
-  width: 23%;
-  position: absolute;
-  top: -5px;
-  left: 218px;
-  margin-left: 430px;
+@media (max-width:320px){
+  .brandImg{
+    display: none;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-height: 768px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
+
+  .brandImg{
+    display: none;
+  }
+    
+
+  }
+
+  @media only screen and (min-device-width: 320px) and (max-device-height: 768px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
+    
+      .brandImg{
+        display: none;
+      }
+    
+    .brand-container {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+  
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+   .brandImg {
+    max-width: 30%;
+    position: absolute;
+    top: 10px;
+    left: 95px;
+    margin-left: 280px;
+  }
+}
+  /* iPads (portrait) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+  
+    .brandImg {
+      max-width: 30%;
+      position: absolute;
+      top: 10px;
+      left: 95px;
+      margin-left: 309px;
+    }
+
+} 
+
+@media only screen  and (min-width : 1024px) {
+  /* Styles */
+  .brandImg{
+    max-width: 20%;
+    position: absolute;
+    top: -5px;
+    left: 218px;
+    margin-left: 430px;
 }
 
 .jumbotron {
@@ -29,56 +80,5 @@ img {
     display: flex;
     flex-flow: column-reverse;
 }
-
-@media only screen and (min-device-width: 320px) and (max-device-height: 736px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2){
-
-    .brandImg{
-      width: 45%;
-      top: 34px;
-      margin-left: -16px;
-    }
-    
-    .brand-container {
-        display: flex;
-        flex-flow: column-reverse;
-    }
-
   }
-
-  @media only screen and (min-device-width: 414px) and (max-device-height: 736px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2){
-    
-    .brandImg {
-      width: 40%;
-      top: 15px;
-      margin-left: 116px;
-    } 
-    
-    .brand-container {
-        display: flex;
-        flex-flow: column-reverse;
-    }
   
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
-   .brandImg {
-    width: 23%;
-    position: absolute;
-    top: 10px;
-    left: 218px;
-    margin-left: 309px;
-  }
-}
-  /* iPads (portrait) ----------- */
-  @media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
-  
-    .brandImg {
-      width: 30%;
-      position: absolute;
-      top: 10px;
-      left: 95px;
-      margin-left: 309px;
-    }
-
-} 

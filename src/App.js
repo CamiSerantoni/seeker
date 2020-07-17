@@ -2,6 +2,7 @@ import React, {useState, useEffect}from 'react';
 import Seeker from './components/Seeker';
 import ListOfImgs from './components/ListOfImgs';
 import seekerBrand from './images/seeker.png';
+ 
 import './App.css';
 
 function App() {
@@ -53,8 +54,8 @@ function App() {
   return (
     <div className="app container">
       <div className="brand-container">
-        <h1 className=" p-5 text-center display-4 m-10"> Seeker.img</h1>
-        <img src={seekerBrand} alt="imagen de lupa" className="brandImg"/>
+        <h1 className=" p-5 text-center display-5 m-10"> Seeker.img</h1>
+        <img src={seekerBrand} alt="titulo" className="brandImg"/>    
       </div>
        <div className="jumbotron">
          

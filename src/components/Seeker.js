@@ -1,8 +1,6 @@
 import React, {useState} from 'react';
 import Error from './Error';
 
-
-
 function Seeker({saveThatSearch}) {
     
     //const [search, saveThatSearch] = useState('');
@@ -41,7 +39,8 @@ function Seeker({saveThatSearch}) {
                 className="btn btn-lg btn-success btn-block"
                 value="Buscar"
               />
-            </div>       
+            </div>   
+             
           </div>
             {(error) ? <Error message="Agrega una palabra para comenzar tu búsqueda" /> : null}
         </form>
