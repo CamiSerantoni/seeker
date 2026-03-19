@@ -1,5 +1,12 @@
 # Seeker.img 🔍
 
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?logo=javascript)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-purple?logo=bootstrap)
+![Axios](https://img.shields.io/badge/Axios-HTTP%20Client-blue)
+![API](https://img.shields.io/badge/API-Pixabay-green)
+![Netlify](https://img.shields.io/badge/Deploy-Netlify-00C7B7?logo=netlify)
+
 **Seeker.img** es una aplicación web que permite buscar imágenes de forma rápida e intuitiva para inspiración, diseño o desarrollo de proyectos.  
 La aplicación consume la **API de Pixabay** para obtener resultados en tiempo real y mostrar imágenes relevantes según el término de búsqueda ingresado por el usuario.
 
@@ -104,7 +111,18 @@ Durante el desarrollo de este proyecto se fortalecieron habilidades clave en des
 - Añadir **modo oscuro (dark mode)** para mejorar la accesibilidad visual.
 - Incorporar **mejoras de accesibilidad (a11y)** para usuarios con tecnologías asistivas.
 
----
+## ⭐ Otros proyectos destacados
+
+Aquí puedes ver otros proyectos de mi portfolio:
+
+- 🔗 **Dashboard Next.js**  
+  https://github.com/CamiSerantoni/dashboardNext
+
+- 🔗 **Weather App**  
+  https://github.com/CamiSerantoni/weather-app
+
+- 🔗 **Amiibos Store**  
+  https://github.com/CamiSerantoni/amiibos-store
 
 ## 👩‍💻 Autora
 
